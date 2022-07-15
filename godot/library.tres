@@ -2,6 +2,6 @@
 
 [resource]
 entry/Windows.64 = "res://gmtk_2022.dll"
-entry/X11.64 = ""
+entry/X11.64 = "res://.debug/libgmtk_2022.so"
 dependency/Windows.64 = [  ]
-dependency/X11.64 = [ "res://.debug/libgmtk_2022.so" ]
+dependency/X11.64 = [  ]
