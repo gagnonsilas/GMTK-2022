@@ -1,9 +1,11 @@
 extends KinematicBody2D
 
-
+var dice_state : DiceState
 export var speed = 200
 export var gravity = 10
 export var jump = 400
+
+#export var g:int = dice_state.gravity 
 
 export var vel = Vector2.ZERO
 
@@ -29,6 +31,7 @@ func _physics_process(delta):
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	print(dice_state.get_gravity())
 	pass # Replace with function body.
 
 
