@@ -8,21 +8,15 @@
 
 config_version=4
 
-_global_script_classes=[ {
-"base": "Node",
-"class": "DiceState",
-"language": "GDScript",
-"path": "res://scripts/DiceState.gd"
-} ]
-_global_script_class_icons={
-"DiceState": ""
-}
-
 [application]
 
 config/name="godot"
 run/main_scene="res://scene.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+DiceState="*res://scripts/DiceState.gd"
 
 [input]
 
@@ -39,6 +33,11 @@ left={
 up={
 "deadzone": 0.5,
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":87,"unicode":0,"echo":false,"script":null)
+ ]
+}
+roll={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":82,"unicode":0,"echo":false,"script":null)
  ]
 }
 
