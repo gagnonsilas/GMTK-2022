@@ -26,6 +26,12 @@ texture = ExtResource( 4 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 shape = SubResource( 1 )
 
+[node name="Camera2D" type="Camera2D" parent="Player"]
+current = true
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+editor_draw_drag_margin = true
+
 [node name="Box" type="StaticBody2D" parent="."]
 scale = Vector2( 0.376805, 0.968094 )
 
